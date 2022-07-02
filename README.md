@@ -13,6 +13,7 @@
 * Should show tooltips near the area itself
 * Data loading states can be added
 * Performance Optimizations
+* Responsiveness
 
 
 ## Map Views
