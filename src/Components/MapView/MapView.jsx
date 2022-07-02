@@ -11,15 +11,8 @@ import {
 import {
   MapContainer,
   TileLayer,
-  useMap,
-  Marker,
-  Popup,
   Polygon,
-  Tooltip,
-  useMapEvents,
 } from "react-leaflet";
-import ReactMapGL, { Source, Layer } from "react-map-gl";
-import Map from "react-map-gl";
 import "./MapView.css";
 import MapSelector from "../MapSelector/MapSelector";
 import CurrentAreaData from "../CurrentAreaData/CurrentAreaData";
