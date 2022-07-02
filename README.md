@@ -2,7 +2,7 @@
 [Live Link](https://kyupid-assignment.netlify.app/)
 
 ## Assumptions
-* User has access to this dashboard I didn't figure out the navigation to come to this page.
+* User has access to this dashboard so I didn't figure out the navigation to this page.
 * Cost per pro subscription is 50$
 
 ## Improvements
