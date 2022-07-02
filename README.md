@@ -10,6 +10,7 @@
 * Feature to compare areas would be a great addition , will help in further analysis
 * A larger spectrum of Data can be plotted with more vivid shades
 * Should show tooltips near the area itself
+* Data loading states can be added
 
 ## Map Views
 ![image](https://user-images.githubusercontent.com/44872604/176987548-4cd49b1a-89fe-497c-9c14-07e6364e08d7.png)
