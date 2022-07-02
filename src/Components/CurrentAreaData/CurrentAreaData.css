@@ -1,0 +1,25 @@
+.current-area-data--container{
+    width:20rem;
+    height:max-content;
+    background-color: #111827;
+    position:absolute;
+    top:2rem;
+    right:2rem;
+    z-index: 500;
+    border-radius:8px;
+}
+.current-area-data{
+    color: #9ca3af;
+    padding:1rem;
+    border-bottom:1px solid #1f2937;
+    max-width:100%;
+    display: flex;
+}
+.current-area-data span{
+    color: #f3f4f6;
+    margin-left:auto;
+}
+.area{
+    font-size: 1.3rem;
+    color:#f3f4f6;
+}

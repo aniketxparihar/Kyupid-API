@@ -1,0 +1,18 @@
+.map-selector--container{
+    min-width:max-content;
+    height:max-content;
+    bottom:2rem;
+    right:2rem;
+    background-color:#111827 ;
+    color:#f3f4f6;
+    border-radius:8px;
+    position: absolute;
+    z-index:500;
+}
+    .map-selector{
+        padding:1rem;
+        cursor: pointer;
+    }
+    .map-selector:hover{
+        background-color:#1f2937;border-radius:8px;
+    }

@@ -1,0 +1,160 @@
+.color-scale{
+    width:25rem;
+    height:4rem;
+    margin:1rem 0rem;
+    z-index:500;
+    position: absolute;
+    left:60%;
+    bottom:2rem;
+    transform:translateX(-50%);
+    display: flex;
+    border-radius:8px;
+    overflow: hidden;
+}
+.user-color-scale{
+     width:35rem;
+    height:4rem;
+    margin:1rem 0rem;
+    z-index:500;
+    position: absolute;
+    left:60%;
+    bottom:2rem;
+    transform:translateX(-50%);
+    display: flex;
+    border-radius:8px;
+    overflow: hidden;
+}
+.range{
+    height:2rem;
+    width:5rem;
+    background-color: #111827;
+    color:#f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color{
+  height:2rem;
+  width:5rem;
+
+
+}
+.color-scale--container{
+ display: flex;
+ flex-direction: column;
+}
+.user-high{
+    background-color: #581c87;
+ 
+}
+.user-med-high{
+    background-color: #7e22ce;
+ 
+}
+.user-med{
+    background-color: #a855f7;
+ 
+}
+.user-med-low{
+    background-color: #d8b4fe;
+ 
+}
+.user-low{
+    background-color: #f3e8ff;
+ 
+}
+.male{
+    background-color: #a3e635;
+}
+.female{
+    background-color: #38bdf8;
+}
+
+.revenue-high{
+    background-color: #064e3b;
+ 
+}
+.revenue-med-high{
+    background-color: #047857;
+ 
+}
+.revenue-med{
+    background-color: #10b981;
+ 
+}
+.revenue-med-low{
+    background-color: #6ee7b7;
+ 
+}
+.revenue-low{
+    background-color: #d1fae5;
+ 
+}
+
+
+
+.male-high{
+    background-color: #365314;
+ 
+}
+.male-med-high{
+    background-color: #4d7c0f;
+ 
+}
+.male-med{
+    background-color: #84cc16;
+ 
+}
+.male-med-low{
+    background-color: #bef264;
+ 
+}
+.male-low{
+    background-color: #d9f99d;
+ 
+}
+
+
+
+.female-high{
+    background-color: #0c4a6e;
+ 
+}
+.female-med-high{
+    background-color: #0369a1;
+ 
+}
+.female-med{
+    background-color: #0ea5e9;
+ 
+}
+.female-med-low{
+    background-color: #7dd3fc;
+ 
+}
+.female-low{
+    background-color: #bae6fd;
+ 
+}
+
+
+.match-high{
+    background-color: #db2777;
+ 
+}
+.match-med-high{
+    background-color: #ec4899;
+ 
+}
+.match-med{
+    background-color: #f472b6;
+ 
+}
+.match-med-low{
+    background-color: #f9a8d4;
+ 
+}
+.match-low{
+    background-color: #fbcfe8;
+ 
+}
