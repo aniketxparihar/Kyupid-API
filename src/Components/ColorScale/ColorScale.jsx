@@ -25,7 +25,7 @@ const ColorScale = () => {
             <div className="color user-med-low"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">100-140</span>
+            <span className="range">0-140</span>
             <div className="color user-low"></div>
           </div>
           <div className="color-scale--container">
@@ -42,23 +42,23 @@ const ColorScale = () => {
       return (
         <div className="color-scale">
           <div className="color-scale--container">
-            <span className="range">Above 130</span>
+            <span className="range">Above $130</span>
             <div className="color revenue-high"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">110-130</span>
+            <span className="range">$110-$130</span>
             <div className="color revenue-med-high"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">90-110</span>
+            <span className="range">$90-$110</span>
             <div className="color revenue-med"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">70-90</span>
+            <span className="range">$70-$90</span>
             <div className="color revenue-med-low"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">50-70</span>
+            <span className="range">$0-$70</span>
             <div className="color revenue-low"></div>
           </div>
         </div>
@@ -67,23 +67,23 @@ const ColorScale = () => {
       return (
         <div className="color-scale">
           <div className="color-scale--container">
-            <span className="range">Above 130</span>
+            <span className="range">Above 160</span>
             <div className="color male-high"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">110-130</span>
+            <span className="range">120-160</span>
             <div className="color male-med-high"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">90-110</span>
+            <span className="range">80-120</span>
             <div className="color male-med"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">70-90</span>
+            <span className="range">40-80</span>
             <div className="color male-med-low"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">50-70</span>
+            <span className="range">0-40</span>
             <div className="color male-low"></div>
           </div>
         </div>
@@ -92,23 +92,23 @@ const ColorScale = () => {
       return (
         <div className="color-scale">
           <div className="color-scale--container">
-            <span className="range">Above 130</span>
+            <span className="range">Above 160</span>
             <div className="color female-high"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">110-130</span>
+            <span className="range">120-160</span>
             <div className="color female-med-high"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">90-110</span>
+            <span className="range">80-120</span>
             <div className="color female-med"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">70-90</span>
+            <span className="range">40-80</span>
             <div className="color female-med-low"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">50-70</span>
+            <span className="range">0-40</span>
             <div className="color female-low"></div>
           </div>
         </div>
@@ -117,23 +117,23 @@ const ColorScale = () => {
       return (
         <div className="color-scale">
           <div className="color-scale--container">
-            <span className="range">Above 130</span>
+            <span className="range">Above 1600</span>
             <div className="color match-high"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">110-130</span>
+            <span className="range">1200-1600</span>
             <div className="color match-med-high"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">90-110</span>
+            <span className="range">800-1200</span>
             <div className="color match-med"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">70-90</span>
+            <span className="range">400-800</span>
             <div className="color match-med-low"></div>
           </div>
           <div className="color-scale--container">
-            <span className="range">50-70</span>
+            <span className="range">0-400</span>
             <div className="color match-low"></div>
           </div>
         </div>

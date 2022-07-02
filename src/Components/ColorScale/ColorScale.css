@@ -32,6 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.8rem;
 }
 .color{
   height:2rem;
@@ -67,7 +68,7 @@
     background-color: #a3e635;
 }
 .female{
-    background-color: #38bdf8;
+    background-color: #F4B583;
 }
 
 .revenue-high{

@@ -9,7 +9,7 @@ const Sidebar = () => {
         Total Revenue
         <span>
           {totalAreaData.totalRevenue !== 0
-            ? `${totalAreaData.totalRevenue * 50} $`
+            ? `$${totalAreaData.totalRevenue * 50} `
             : "Loading..."}
         </span>
       </div>
@@ -37,12 +37,7 @@ const Sidebar = () => {
             : "Loading..."}
         </span>
       </div>
-      <div
-        className="reset-current-map-data"
-        onClick={() => setCurrentAreaName("")}
-      >
-        View all areas
-      </div>
+
       <div
         className="sidebar--data button"
         onClick={() => setCurrentAreaName(totalAreaData.highestMatches)}
@@ -98,7 +93,12 @@ const Sidebar = () => {
             : "Loading..."}
         </span>
       </div>
-     
+      <div
+        className="reset-current-map-data"
+        onClick={() => setCurrentAreaName("")}
+      >
+        View all areas
+      </div>
     </div>
   );
 }

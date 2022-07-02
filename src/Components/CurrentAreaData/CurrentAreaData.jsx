@@ -52,7 +52,7 @@ const CurrentAreaData = () => {
               Pro Users <span>{currentAreaData?.proUsersInThisArea} 😎</span>
             </div>
             <div className="current-area-data">
-              Revenue <span>{currentAreaData?.revenueInThisArea} $</span>
+              Revenue <span>${currentAreaData?.revenueInThisArea} </span>
             </div>
             <div className="current-area-data">
               Conversion Rate <span>{currentAreaData?.conversionRate} %</span>

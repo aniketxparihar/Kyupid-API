@@ -98,7 +98,7 @@ const MapView = () => {
           if (currentAreaData.leadingGender === "M") {
             return "#a3e635";
           } else if (currentAreaData.leadingGender === "F") {
-            return "#38bdf8";
+            return "#F4B583";
           }
           else
             return "";

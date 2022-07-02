@@ -25,7 +25,7 @@ const SearchAreas = () => {
           className="search-result-visible--toggle material-symbols-outlined"
           onClick={() => setSearchResultVisible((prev) => !prev)}
         >
-          {searchResultVisible ? "expand_more" : "expand_less"}
+          {searchResultVisible ? "expand_less" : "expand_more"}
         </span>
       </div>
       <div className="search-result--container">

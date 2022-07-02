@@ -8,6 +8,7 @@
     border-radius:8px;
     position: absolute;
     z-index:500;
+    overflow: hidden;
 }
     .map-selector{
         padding:1rem;
