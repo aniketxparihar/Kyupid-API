@@ -44,6 +44,7 @@ const SearchAreas = () => {
                     setCurrentAreaName(area.properties.name);
                     setSearchResultVisible(false);
                   }}
+                  key={area.properties.area_id}
                 >
                   {area.properties.name}
                 </div>

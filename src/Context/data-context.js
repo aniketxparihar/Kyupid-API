@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState, useMemo, useCallback, useEffect } from 'react'
-import axios from "axios"
 import {
     getTotalFemale,
     getTotalMale,
@@ -22,6 +21,7 @@ import {
     getAreaWithHighestFemaleUsers,
     getLeadingGenderInThisArea,
 } from '../Utils';
+import axios from "axios"
 
 
 const DataContext = createContext();

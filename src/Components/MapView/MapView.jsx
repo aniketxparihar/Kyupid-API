@@ -179,9 +179,10 @@ const MapView = () => {
               pathOptions={{
                 fillOpacity: 5,
                 weight: 5,
-                color:"",
-                fillColor:currentColor(area,currentArea)
+                color: "",
+                fillColor: currentColor(area, currentArea),
               }}
+              key={area.properties.area_id}
               positions={area.geometry.coordinates}
               eventHandlers={{
                 mouseover: () => {
@@ -189,13 +190,11 @@ const MapView = () => {
                   setShowCurrentData(true);
                 },
                 mouseout: () => {
-                  setShowCurrentData(false)
-                  currentAreaHandler({})
-                }
+                  setShowCurrentData(false);
+                  currentAreaHandler({});
+                },
               }}
-            >
-              
-            </Polygon>
+            ></Polygon>
           );
         })}
       </MapContainer>
