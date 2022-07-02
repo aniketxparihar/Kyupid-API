@@ -1,15 +1,10 @@
-import React from 'react'
-import { useData } from '../../Context/data-context';
-import "./CurrentAreaData.css"
+import React from "react";
+import { useData } from "../../Context/data-context";
+import "./CurrentAreaData.css";
 
 const CurrentAreaData = () => {
-  const {
-    currentArea,
-    position,
-    mapType,
-    currentAreaData,
-    showCurrentData
-  } = useData();
+  const { currentArea, position, mapType, currentAreaData, showCurrentData } =
+    useData();
   if (showCurrentData) {
     switch (mapType) {
       case "user":
@@ -138,6 +133,6 @@ const CurrentAreaData = () => {
         return null;
     }
   }
-}
+};
 
-export default CurrentAreaData
+export default CurrentAreaData;

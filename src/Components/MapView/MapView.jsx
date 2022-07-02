@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
 
 import { useData } from "../../Context/data-context";
-import { getFemaleUsersInThisArea, getMaleUsersInThisArea, getMatchesInThisArea, getRevenueInThisArea, getUsersInThisArea } from "../../Utils";
+import {
+  getFemaleUsersInThisArea,
+  getMaleUsersInThisArea,
+  getMatchesInThisArea,
+  getRevenueInThisArea,
+  getUsersInThisArea,
+} from "../../Utils";
 import {
   MapContainer,
   TileLayer,
@@ -20,10 +26,18 @@ import CurrentAreaData from "../CurrentAreaData/CurrentAreaData";
 import ColorScale from "../ColorScale/ColorScale";
 import SearchAreas from "../SearchAreas/SearchAreas";
 
-
-
 const MapView = () => {
-  const { currentArea, currentAreaHandler,currentAreaName, position, mapData, userData, mapType,currentAreaData,setShowCurrentData } = useData();
+  const {
+    currentArea,
+    currentAreaHandler,
+    currentAreaName,
+    position,
+    mapData,
+    userData,
+    mapType,
+    currentAreaData,
+    setShowCurrentData,
+  } = useData();
   const [mapStyleObject, setMapStyleObject] = useState({});
   const [dominantUserGender, setDominantUserGender] = useState("");
   const [currentMapData, setCurrentMapData] = useState();
@@ -35,7 +49,7 @@ const MapView = () => {
     } else {
       setCurrentMapData(mapData);
     }
-  }, [currentAreaName,mapData]);
+  }, [currentAreaName, mapData]);
   useEffect(() => {
     switch (mapType) {
       case "user":
@@ -85,11 +99,9 @@ const MapView = () => {
         break;
       default:
         return;
-    }}
-    , [mapType]);
-  
-  
-  
+    }
+  }, [mapType]);
+
   const currentColor = (area) => {
     switch (mapType) {
       case "user":
@@ -99,9 +111,7 @@ const MapView = () => {
             return "#a3e635";
           } else if (currentAreaData.leadingGender === "F") {
             return "#38bdf8";
-          }
-          else
-            return "";
+          } else return "";
         } else {
           if (usersInThisArea > 260) return mapStyleObject.max;
           else if (usersInThisArea > 220) return mapStyleObject.uppermed;
@@ -161,13 +171,13 @@ const MapView = () => {
       default:
         return;
     }
-  }
+  };
   return (
     <>
-      <ColorScale/>
+      <ColorScale />
       <MapSelector />
       <CurrentAreaData />
-      <SearchAreas/>
+      <SearchAreas />
       <MapContainer center={position} zoom={11} scrollWheelZoom={true}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -200,7 +210,6 @@ const MapView = () => {
       </MapContainer>
     </>
   );
-     
 };
 
 export default MapView;

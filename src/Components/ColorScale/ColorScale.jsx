@@ -1,6 +1,6 @@
-import React from 'react'
-import { useData } from '../../Context/data-context';
-import "./ColorScale.css"
+import React from "react";
+import { useData } from "../../Context/data-context";
+import "./ColorScale.css";
 
 const ColorScale = () => {
   const { mapType } = useData();
@@ -137,10 +137,10 @@ const ColorScale = () => {
             <div className="color match-low"></div>
           </div>
         </div>
-      )
+      );
     default:
       return;
   }
-}
+};
 
-export default ColorScale
+export default ColorScale;

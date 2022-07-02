@@ -1,8 +1,8 @@
-import React from 'react'
-import { useData } from '../../Context/data-context';
-import "./Sidebar.css"
+import React from "react";
+import { useData } from "../../Context/data-context";
+import "./Sidebar.css";
 const Sidebar = () => {
-  const { totalAreaData,setCurrentAreaName } = useData();
+  const { totalAreaData, setCurrentAreaName } = useData();
   return (
     <div className="sidebar--container">
       <div className="sidebar--data">
@@ -101,6 +101,6 @@ const Sidebar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Sidebar
+export default Sidebar;

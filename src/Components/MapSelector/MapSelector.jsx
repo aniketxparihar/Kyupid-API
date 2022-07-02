@@ -1,6 +1,6 @@
-import React from 'react'
-import { useData } from '../../Context/data-context';
-import "./MapSelector.css"
+import React from "react";
+import { useData } from "../../Context/data-context";
+import "./MapSelector.css";
 const MapSelector = () => {
   const { mapType, setMapType } = useData();
   return (
@@ -47,6 +47,6 @@ const MapSelector = () => {
       </div>
     </div>
   );
-}
+};
 
-export default MapSelector
+export default MapSelector;

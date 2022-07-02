@@ -1,26 +1,26 @@
-.map-selector--container{
-    min-width:max-content;
-    height:max-content;
-    bottom:2rem;
-    right:2rem;
-    background-color:#111827 ;
-    color:#f3f4f6;
-    border-radius:8px;
-    position: absolute;
-    z-index:500;
-    overflow: hidden;
+.map-selector--container {
+  min-width: max-content;
+  height: max-content;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #111827;
+  color: #f3f4f6;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 500;
+  overflow: hidden;
 }
-    .map-selector{
-        padding:1rem;
-        cursor: pointer;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-    }
-    .map-selector span{
-        padding:0 0.5rem 0 0;
-        
-    }
-    .map-selector:hover{
-        background-color:#1f2937;border-radius:8px;
-    }
+.map-selector {
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.map-selector span {
+  padding: 0 0.5rem 0 0;
+}
+.map-selector:hover {
+  background-color: #1f2937;
+  border-radius: 8px;
+}
