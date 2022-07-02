@@ -13,6 +13,13 @@
     .map-selector{
         padding:1rem;
         cursor: pointer;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .map-selector span{
+        padding:0 0.5rem 0 0;
+        
     }
     .map-selector:hover{
         background-color:#1f2937;border-radius:8px;

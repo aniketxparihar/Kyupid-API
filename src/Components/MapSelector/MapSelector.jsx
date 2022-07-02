@@ -10,35 +10,40 @@ const MapSelector = () => {
         style={{ backgroundColor: mapType === "revenue" ? "#374151" : null }}
         onClick={() => setMapType("revenue")}
       >
-        💵 Revenue Map
+        <span className="material-symbols-outlined">attach_money</span>
+        Revenue Map
       </div>
       <div
         className="map-selector"
         style={{ backgroundColor: mapType === "user" ? "#374151" : null }}
         onClick={() => setMapType("user")}
       >
-        💁 User Map
+        <span className="material-symbols-outlined">person</span>
+        User Map
       </div>
       <div
         className="map-selector"
         style={{ backgroundColor: mapType === "male" ? "#374151" : null }}
         onClick={() => setMapType("male")}
       >
-        👨 Male Map
+        <span className="material-symbols-outlined">male</span>
+        Male Map
       </div>
       <div
         className="map-selector"
         style={{ backgroundColor: mapType === "female" ? "#374151" : null }}
         onClick={() => setMapType("female")}
       >
-        👩 Female Map
+        <span className="material-symbols-outlined">female</span>
+        Female Map
       </div>
       <div
         className="map-selector"
         style={{ backgroundColor: mapType === "match" ? "#374151" : null }}
         onClick={() => setMapType("match")}
       >
-        💗 Matches Map
+        <span className="material-symbols-outlined">favorite</span>
+        Matches Map
       </div>
     </div>
   );

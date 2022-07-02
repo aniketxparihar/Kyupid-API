@@ -13,32 +13,54 @@ const CurrentAreaData = () => {
   if (showCurrentData) {
     switch (mapType) {
       case "user":
-        return (<div className="current-area-data--container">
-          <div className="current-area-data area">
-            {currentArea?.properties?.name}
+        return (
+          <div className="current-area-data--container">
+            <div className="current-area-data area">
+              {currentArea?.properties?.name}
+            </div>
+            <div className="current-area-data">
+              Users{" "}
+              <span>
+                {currentAreaData?.usersInThisArea}{" "}
+                <span className="material-symbols-outlined">person</span>
+              </span>
+            </div>
+            <div className="current-area-data">
+              Male Users{" "}
+              <span>
+                {currentAreaData?.maleUsersInThisArea}{" "}
+                <span className="material-symbols-outlined">male</span>
+              </span>
+            </div>
+            <div className="current-area-data">
+              Female Users{" "}
+              <span>
+                {currentAreaData?.femaleUsersInThisArea}{" "}
+                <span className="material-symbols-outlined">female</span>
+              </span>
+            </div>
+            <div className="current-area-data">
+              Matches{" "}
+              <span>
+                {currentAreaData?.matchesInThisArea}{" "}
+                <span className="material-symbols-outlined">favorite</span>
+              </span>
+            </div>
+            <div className="current-area-data">
+              Leading Gender{" "}
+              <span>
+                {currentAreaData?.leadingGender === "F" ? (
+                  <span className="material-symbols-outlined">female</span>
+                ) : (
+                  <span className="material-symbols-outlined">male</span>
+                )}
+              </span>
+            </div>
+            <div className="current-area-data">
+              Gender Ratio (M/F) <span>{currentAreaData?.genderRatio} %</span>
+            </div>
           </div>
-          <div className="current-area-data">
-            Users <span>{currentAreaData?.usersInThisArea} 😃</span>
-          </div>
-          <div className="current-area-data">
-            Male Users <span>{currentAreaData?.maleUsersInThisArea} 🧑</span>
-          </div>
-          <div className="current-area-data">
-            Female Users <span>{currentAreaData?.femaleUsersInThisArea} 👩</span>
-          </div>
-          <div className="current-area-data">
-            Matches <span>{currentAreaData?.matchesInThisArea} 🧡</span>
-          </div>
-          <div className="current-area-data">
-            Leading Gender{" "}
-            <span>
-              {currentAreaData?.leadingGender === "F" ? "F 👩" : "M 🧑"}
-            </span>
-          </div>
-          <div className="current-area-data">
-            Gender Ratio (M/F) <span>{currentAreaData?.genderRatio} %</span>
-          </div>
-        </div>)
+        );
       case "revenue":
         return (
           <div className="current-area-data--container">
@@ -46,10 +68,18 @@ const CurrentAreaData = () => {
               {currentArea?.properties.name}
             </div>
             <div className="current-area-data">
-              Users <span>{currentAreaData?.usersInThisArea} 😃</span>
+              Users{" "}
+              <span>
+                {currentAreaData?.usersInThisArea}{" "}
+                <span className="material-symbols-outlined">person</span>
+              </span>
             </div>
             <div className="current-area-data">
-              Pro Users <span>{currentAreaData?.proUsersInThisArea} 😎</span>
+              Pro Users{" "}
+              <span>
+                {currentAreaData?.proUsersInThisArea}{" "}
+                <span className="material-symbols-outlined">mood</span>
+              </span>
             </div>
             <div className="current-area-data">
               Revenue <span>${currentAreaData?.revenueInThisArea} </span>
@@ -66,7 +96,11 @@ const CurrentAreaData = () => {
               {currentArea?.properties?.name}
             </div>
             <div className="current-area-data">
-              Male Users <span>{currentAreaData?.maleUsersInThisArea} 🧑</span>
+              Male Users{" "}
+              <span>
+                {currentAreaData?.maleUsersInThisArea}{" "}
+                <span className="material-symbols-outlined">male</span>
+              </span>
             </div>
           </div>
         );
@@ -78,7 +112,10 @@ const CurrentAreaData = () => {
             </div>
             <div className="current-area-data">
               Female Users
-              <span>{currentAreaData?.femaleUsersInThisArea} 👩</span>
+              <span>
+                {currentAreaData?.femaleUsersInThisArea}{" "}
+                <span className="material-symbols-outlined">female</span>
+              </span>
             </div>
           </div>
         );
@@ -89,7 +126,11 @@ const CurrentAreaData = () => {
               {currentArea?.properties?.name}
             </div>
             <div className="current-area-data">
-              Matches <span>{currentAreaData?.matchesInThisArea} 🧡</span>
+              Matches{" "}
+              <span>
+                {currentAreaData?.matchesInThisArea}{" "}
+                <span className="material-symbols-outlined">favorite</span>
+              </span>
             </div>
           </div>
         );
